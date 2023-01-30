@@ -1,0 +1,25 @@
+{
+  "name": "puppeteer-docker-RPi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moozzyk/puppeteer-docker-RPi.git"
+  },
+  "author": "Pawel Kadluczka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moozzyk/craigslist-automation/issues"
+  },
+  "homepage": "https://github.com/moozzyk/craigslist-automation#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "puppeteer": "^19.5.0"
+  }
+}
