@@ -1,1 +1,15 @@
 # puppeteer-docker-RPi
+
+Running puppeteer in Docker on Raspberry Pi
+
+Environment:
+- Hardware: Raspberry Pi 2 Model B Rev 1.1
+- OS: Raspbian GNU/Linux 11 (bullseye)
+
+## Test that the app works without docker
+- clone the repo: `git clone https://github.com/moozzyk/puppeteer-docker-RPi`
+- install Chromium: `sudo apt-get update && sudo apt-get install chromium -y`
+- install dependencies: `PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm install`
+- run application: `node index.js`: 
+  
+  <img width="375" alt="image" src="https://user-images.githubusercontent.com/1438884/215398311-2a43a9ea-b269-4fe0-82d6-e9102b519522.png">
