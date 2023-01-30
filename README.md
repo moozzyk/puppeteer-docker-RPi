@@ -1,6 +1,6 @@
 # puppeteer-docker-RPi
 
-Running puppeteer in Docker on Raspberry Pi
+Running puppeteer in a Docker container on Raspberry Pi
 
 Environment:
 - Hardware: Raspberry Pi 2 Model B Rev 1.1
