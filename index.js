@@ -4,16 +4,19 @@ const puppeteer = require('puppeteer');
         executablePath: '/usr/bin/chromium',
         args: [
             '--no-sandbox',
+            // '--disable-gpu,
+            // '--disable-dev-shm-usage',
+            // '--disable-setuid-sandbox',
         ]
     });
     const page = await browser.newPage();
     await page.goto('https://www.google.com/', {waitUntil: 'networkidle2'});
-    let e = await page.$("div#hplogo");
-    if (e) {
-      let p = await e.getProperty("title");
-      if (p) {
-         console.log(`Todays doodle: ${await p.jsonValue()}`);
-      }
+    let e = await page.$('div#hplogo');
+    let p = await e?.getProperty('title');
+    if (p) {
+      console.log(`Today's Doodle: ${await p.jsonValue()}`);
+    } else {
+      console.log('No Doodle today :(');
     }
     browser.close();
 })();
