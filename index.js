@@ -10,13 +10,13 @@ const puppeteer = require('puppeteer');
         ]
     });
     const page = await browser.newPage();
-    await page.goto('https://www.google.com/', {waitUntil: 'networkidle2'});
-    let e = await page.$('div#hplogo');
-    let p = await e?.getProperty('title');
+    await page.goto('https://bing.com/', {waitUntil: 'networkidle2'});
+    let e = await page.$('h1#headline');
+    let p = await e.getProperty('textContent');
     if (p) {
-      console.log(`Today's Doodle: ${await p.jsonValue()}`);
+      console.log(`Today's headline: ${await p.jsonValue()}`);
     } else {
-      console.log('No Doodle today :(');
+      console.log('No headline found');
     }
     browser.close();
 })();
