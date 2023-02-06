@@ -1,5 +1,7 @@
 # puppeteer-docker-RPi
 
+This repository provides the code accompanying the article: [Running Puppeteer in a Docker Container on Raspberry Pi](https://blog.3d-logic.com/2023/02/05/running-puppeteer-in-a-docker-container-on-raspberry-pi/)
+
 Running puppeteer in a Docker container on Raspberry Pi
 
 Environment:
